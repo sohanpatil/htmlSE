@@ -1,0 +1,132 @@
+
+<html>
+<head>
+<title>Showroom Homepage</title>
+<style> 
+#div1 {
+    border: 3px solid;
+    border-radius: 10px;
+	background-color:black;
+	padding:10px;
+	color:white;
+}
+
+/*div {
+    border: 2px solid #a1a1a1;
+    padding: 10px 40px; 
+    background: #dddddd;
+    width: 450px;
+    border-radius: 25px;
+	box-shadow: 10px 10px 5px #888888;
+	
+} */
+ul#menu {
+    padding: 0;
+	list-style: none
+}
+
+ul#menu li {
+    display: inline;
+}
+
+ul#menu li a {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px 4px 0 0;
+}
+
+ul#menu li a:hover {
+    background-color: orange;
+}
+footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+form {
+    width: 300px;
+    margin: 0 auto;
+	align:center;
+	margin-left: 500px	;
+	margin-top:300px;
+}
+ ul li:hover ul{
+        display: block; 
+    }
+	 ul li ul{
+        display: none;
+    }
+
+</style>
+<script type="text/javascript">
+var slideimages = new Array()
+slideimages[0] = new Image() 
+slideimages[0].src = "car1.jpg"
+slideimages[1] = new Image()
+slideimages[1].src = "car2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "car3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "car4.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "car5.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "car6.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "car7.jpg"
+</script>
+
+</head>
+<body background="tech.jpg" style="background-repeat:repeat-x>
+<div style="background-color:black; color:white; margin:20px; padding:20px;float:left">
+<img src="head.png" style="float:left;margin-right: 1cm">
+<br>
+<ul id="menu">
+ <li><a href="aboutus.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About us&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+ <li><a href="form.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Book a free Test-drive&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+ <li><a href="frame.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;New in the hood&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+ <li><a href="#">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Contact us  &#9662;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+ <ul>
+                <li><a href="#">Email us</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+ </li>
+</ul>
+<!--<h1 style="text-align:center;font-family:Impact;background-color:lightgray">Exotic Rides</h1>-->
+</div>
+
+<br><br><br>
+<form style="float:left;margin-right: 1cm">
+<div id="div1" style="margin:auto">
+<br>
+&nbsp;&nbsp;Email - id : <input type="text" name="firstname"><br><br>
+ &nbsp;&nbsp;Password : <input type="password" name="pwd"><br><br>
+ <form action="">
+<input type="button" value="Login">
+</form><br><br>
+</div>
+</form>
+<!--<div style="margin:6cm"><img src="car1.jpg" id="slide" width="450px" height="250px"></div>-->
+<script type="text/javascript">
+var step=0
+function slideit()
+{
+ document.getElementById("slide").src = slideimages[step].src
+ if (step<6)
+  step++
+ else
+  step=0
+ setTimeout("slideit()",2500)
+}
+slideit()
+</script>
+<footer style="margin-top:40%">
+Copyright &copy; Sohan Patil :)
+</footer>
+</body>
+</html>

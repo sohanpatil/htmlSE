@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>About Us</title>
+<style>
+.textwrap{
+float: left;
+margin: 10px;
+}
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+	}
+	footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+    padding:5px;	 	 
+}
+p{ background-color:#dddddd;
+opacity:0.7;
+ border: 2px solid;
+    border-radius: 25px
+	margin:30px;
+padding:25px;}
+
+</style>
+<script type="text/javascript">
+var slideimages = new Array()
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "car1.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "car2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "car3.jpg"
+slideimages[3] = new Image()
+slideimages[3].src = "car4.jpg"
+slideimages[4] = new Image()
+slideimages[4].src = "car5.jpg"
+slideimages[5] = new Image()
+slideimages[5].src = "car6.jpg"
+slideimages[6] = new Image()
+slideimages[6].src = "car7.jpg"
+slideimages[7] = new Image()
+slideimages[7].src = "car8.jpg"
+slideimages[8] = new Image()
+slideimages[8].src = "car9.jpg"
+slideimages[9] = new Image()
+slideimages[9].src = "car10.jpg"
+</script>
+
+</head>
+<body background="about.jpg" style="background-repeat:no-repeat">
+<div id="header">
+<h1 style="font-family:">About Us</h1>
+</div>
+<p align="left"><i><br>MH Auto Sales, Inclusive started in September 1992 with only 10 cars in inventory. The lot was operated from a rented, singlewide trailer until November 1994. The growing staff moved into a larger building that same year, then construction began at our current location in 1999, and was finished in March of 2001
+<br><br>
+Over the last 10 years, we have opened 14 other locations throughout the state so we can continue to bring ourselves closer to you and your hometown. We are the " Premier Buy Here, Pay Here" dealership in Marathwada,  and we continue to grow! For example, we just opened a state-of -the-art Reconditioning and Detail facility. 
+<br><br>
+"MH Auto Sales offers Extended Service Contracts on Every Car we sell!!" 
+
+With over 12,000 customers and over 1200 vehicles to choose from, MH Auto Sales continues to be one of the Friendliest In-House Financing Dealerships in Marathwada.
+(source - Auto Dealer Monthly based on 2010 retail sales)
+At MH Auto Sales we offer used cars, trucks and SUV's to the Coastal area by top manufacturers. Our staff will help you find that used car you have been searching for in Vidharbha. Check out our complete inventory from popular brands like Nissan, Toyota, Ford, Dodge, Chevrolet and more. 
+<br><br>
+For years, our staff at MH Auto Sales has offered expert advice for those seeking a great used car loan in the Vidharbha area. Our service doesn't stop there, we offer Buy Here Pay Here plans and more. Customers can come in and take advantage of our knowledgeable car repair and service technicians. We hope to see you soon. 
+<br><br></i>
+<img src="car1.jpg" width="450px" height="250px" class="textwrap" id="slide">
+<script type="text/javascript">
+var step=0
+function slideit()
+{
+ document.getElementById("slide").src = slideimages[step].src
+ if (step<9)
+  step++
+ else
+  step=0
+ setTimeout("slideit()",1500)
+}
+slideit()
+</script>
+<footer style="margin-top:15%">
+Copyright &copy; Sohan Patil
+</footer>
+</body>
+</html>

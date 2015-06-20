@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>New in the hood</title>
+</head>
+<body>
+<h1>HELLO</h1>	
+<frameset cols="33%,*,33%">
+  <frame src="aboutus.html">
+  <frame src="blablabla.html">
+  <frame src="form.html">
+</frameset>
+
+</body>
+</html>
